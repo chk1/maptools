@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Title</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script src="js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="page">
+			<div id="map"></div>
+		
+		<div id="notmap">
+
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#tab1" data-toggle="tab">Map Coordinates</a></li>
+				<li><a href="#tab2" data-toggle="tab">Points</a></li>
+				<li><a href="#tab3" data-toggle="tab">Code</a></li>
+			</ul>
+			
+			<div class="tab-content">			
+				<div id="tab1" class="tab-pane active">
+					<div id="map-click-pos">
+						<div class="input-group">
+							<span class="input-group-addon symbol"><img src="http://cdn.leafletjs.com/leaflet-0.7.2/images/marker-icon.png" alt="marker" style="height:16px"></span>
+							<input class="form-control" type="text" id="map-pos-latlon">
+							<span class="input-group-btn">
+								<button class="btn btn-primary" id="goto-btn">Go to</button>
+							</span>
+						</div>
+					</div>
+					<br>
+					
+					<div id="map-center">
+						<div class="input-group"><span class="input-group-addon symbol">+</span><input class="form-control" type="text" id="map-center"></div>
+					</div>
+						
+					<div id="map-bounds">
+						<div class="input-group"><span class="input-group-addon symbol">&larr;</span><input class="form-control" type="text" id="map-bounds-n"></div>
+						<div class="input-group"><span class="input-group-addon symbol">&rarr;</span><input class="form-control" type="text" id="map-bounds-e"></div>
+						<div class="input-group"><span class="input-group-addon symbol">&darr;</span><input class="form-control" type="text" id="map-bounds-s"></div>
+						<div class="input-group"><span class="input-group-addon symbol">&larr;</span><input class="form-control" type="text" id="map-bounds-w"></div>
+						<div class="input-group"><span class="input-group-addon symbol">&#x2195;</span><input class="form-control" type="text" id="map-bounds-ns"></div>
+						<div class="input-group"><span class="input-group-addon symbol">&harr;</span><input class="form-control" type="text" id="map-bounds-we"></div>
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon symbol">?</span>
+						<input class="form-control" type="text" id="map-pos-locate" readonly>
+						<span class="input-group-btn">
+							<button id="locate-btn" class="btn btn-primary">Locate</button>
+							<button id="locate-goto-btn" class="btn btn-success" disabled="disabled">Go to</button>
+						</span>
+					</div>
+					
+					<button id="refresh-btn" class="btn btn-primary btn-sm">Force refresh</button>					
+					<span id="locate-status"></span>
+					
+				</div>
+				
+				<div id="tab2" class="tab-pane">
+					lol
+				</div>
+			
+				<div id="tab3" class="tab-pane">
+					<textarea>asdfa</textarea>
+				</div>
+
+			</div> <!-- /#notmap -->
+		</div> <!-- /#page -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+body, html {
+	font-family: sans-serif;
+	height:100%;
+	padding: 0;
+	margin: 0;
+}
+
+#page {
+	overflow: auto; 
+	height:100%;
+	position: relative;
+}
+
+#map { 
+	position: absolute;
+	height: 100%; 
+	width: 100%;
+}
+
+#notmap {
+	position: absolute;
+	background: #fff;
+	bottom: 0px;
+	padding: 6px;
+	border-top-right-radius: 6px;
+	opacity: 0.7;
+}
+
+#notmap:hover {
+	opacity: 1;
+}
+
+div.clear {
+	height:10px;
+}
+
+span.symbol {
+	font-family: monospace;
+}
