@@ -49,7 +49,7 @@ function updateCoords() {
 }
 
 map.on('click', function(e) {
-    $('#map-pos-latlon').val('' + e.latlng.lng + ', ' + e.latlng.lng);
+    $('#map-pos-latlon').val('' + e.latlng.lat + ', ' + e.latlng.lng);
     clickMarker.setLatLng(e.latlng).addTo(map);
 });
 
